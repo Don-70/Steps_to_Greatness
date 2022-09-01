@@ -25,6 +25,9 @@ db.on('error', (err) => console.log('Mongo ERROR: ' + err.message));
 app.use(express.urlencoded({ extented: false}));
 app.use(methodOverride('_method'));
 
+// app.get('/',(req, res) => res. redirect('/goals'));
+
+// app.use('/goals', goalsRouter);
 
 
 app.listen(PORT, () => {
