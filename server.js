@@ -3,6 +3,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
+const goalsRouter = require('./controllers/goals')
 
 const app = express();
 // configre settings
@@ -25,9 +26,9 @@ db.on('error', (err) => console.log('Mongo ERROR: ' + err.message));
 app.use(express.urlencoded({ extented: false}));
 app.use(methodOverride('_method'));
 
-// app.get('/',(req, res) => res. redirect('/goals'));
+app.get('/', (req, res) => res.redirect('/goals'));
 
-// app.use('/goals', goalsRouter);
+app.use('/goals', goalsRouter);
 
 
 app.listen(PORT, () => {
