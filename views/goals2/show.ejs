@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./nav.ejs') %> 
+    <h1><%= goal2.title%></h1>
+    <p><%= goal2.Step1%></p>
+    <p><%= goal2.Step2%></p>
+    <p><%= goal2.Step3%></p>
+
+    <form action="/goals2/<%= goal2._id %>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete this Goal">
+    </form>
+    <a href="/goals2/<%= goal2._id %>/edit"> Edit Goal</a>
+    <a href="/"> Home</a>
+</body>
+</html>

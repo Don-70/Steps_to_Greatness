@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Goal Page</h1>
+    <form action="/goals3/<%= goal3.id %>?_method=PUT" method="POST">
+        <label>Title:
+            <input type="text" name="title" value="<%=goal3.title%>">
+        </label><br>
+        <label>Step One:
+            <input type="text" name="Step1" value="<%=goal3.Step1%>">
+        </label><br>
+        <label>Step Two:
+            <input type="text" name="Step2" value="<%=goal3.Step2%>">
+         </label><br>
+         <label>Step Three:
+            <input type="text" name="Step3" value="<%=goal3.Step3%>">
+        </label><br>
+        <input type="submit" value="Update This Goal">
+    </form>
+</body>
+</html>
