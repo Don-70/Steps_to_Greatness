@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const goalSchema = new mongoose.Schema({
+const goal2Schema = new mongoose.Schema({
     title: { type: String, require: true},
     Step1: { type: String , require: true},
     Step2: { type: String , require: true},
@@ -9,4 +9,4 @@ const goalSchema = new mongoose.Schema({
 }, { timestamps: true});
 
 
-module.exports = mongoose.model('goal',goalSchema);
+module.exports = mongoose.model('goal2',goal2Schema);

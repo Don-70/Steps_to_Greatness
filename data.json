@@ -3,8 +3,13 @@
         "title" : "Pass GA",
         "Step1": "Enroll",
         "Step2": "Pass All Projects and Do Homework",
-        "Step3": "Stay Up to date with Outcomes",
-        "completed": true
+        "Step3": "Stay Up to date with Outcomes"
+    },
+    {
+        "title" : "Pass GA",
+        "Step1": "Enroll",
+        "Step2": "Pass All Projects and Do Homework",
+        "Step3": "Stay Up to date with Outcomes"
     }
     
 ]

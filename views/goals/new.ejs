@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./nav.ejs') %> 
+    <h1> New Goal </h1>
+    <form action="/goals" method="POST">
+        <label> Title:
+            <input type="text" name="title">
+        </label><br>
+        <label>Step One:
+            <input type="text" name="Step1">
+        </label><br>
+        <label>Step Two:
+            <input type="text" name="Step2">
+        </label><br>
+        <label>Step Three:
+            <input type="text" name="Step3">
+        </label><br>
+        <input type="submit" value="Add Goal"></input>
+    </form>
+</body>
+</html>
+
