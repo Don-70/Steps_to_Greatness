@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/show.css">
     <title>Document</title>
 </head>
 <body>
-    <%- include('./nav.ejs') %> 
-    <h1> <%= goal.title%></h1>
+    <ul>
+        <il><a class="home" href="/">Home</a></il>
+        <il><a class="short" href="/goals"> Short Term Goals</a></il>
+        <il><a class="mid" href="/goals2"> Mid Term Goals</a></il>
+        <il><a class="long" href="/goals3"> Long Term Goals</a></il>
+    </ul>
+    <section>
+        <div class="container">
+            <div class="list">
+    <h2> <%= goal.title%></h2>
     <p><%= goal.Step1%></p>
     <p><%= goal.Step2%></p>
     <p><%= goal.Step3%></p>
-
+    <div class="links">
+    <a class="home" href="/">Home</a>
+    <a href="/goals"> Short Term Goals</a>
+    <a href="/goals/<%= goal._id %>/edit"> Edit Goal</a><br>
     <form action="/goals/<%= goal._id %>?_method=DELETE" method="POST">
         <input type="submit" value="Delete this Goal">
     </form>
-    <a href="/goals/<%= goal._id %>/edit"> Edit Goal</a>
+</div>
+</div>
+</div>
+</section>
 </body>
+<footer>This Application was created by Dudley R. Gamino J.R. in 2022 <a href="https://www.linkedin.com/in/dudley-gamino-43a432236/"target="_blank">LinkedIn</a> & <a href="https://github.com/Don-70"target="_blank">gitHub</a></footer>
 </html>
