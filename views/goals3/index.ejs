@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/long.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Long Term Goals</h1>
-    <ul> 
-
-        <% goals3.forEach(g => { %>
-            <li>
-                <a href ="/goals3/<%= g._id %>">
-                    <%= g.title %>
-                </a>
-            </li>
-            <%});%>
+    <h1 class="jumbotron">Long Term Goals List</h1>
+    <div class="nav">
+         <ul>
+            <il><a class="home" href="/">Home</a></il>
+            <il><a class="short" href="goals"> Short Term Goals</a></il>
+            <il><a class="mid" href="goals2"> Mid Term Goals</a></il>
+            <il><a class="long" href="goals3"> Long Term Goals</a></il>
         </ul>
-        <a href="/goals3/new"> Add to Goals List</a><br>
-        
- 
-        <a href="/"> Home</a>
-        
-</body>
-</html>
+    </div>
+    <section>
+        <div class="container">
+            <div class="left">
+            </div>
+            <div class="right">
+                <h2> Current Goals</h2>
+        <ul class="goals"> 
+            
+            <% goals3.forEach(g => { %>
+                <li>
+                    <a href ="/goals3/<%= g._id %>">
+                        <%= g.title %>
+                    </a>
+                </li>
+                <%});%>
+            </ul>
+            <a class="add" href="/goals3/new"> Add to Goals List</a>
+            </div>
+            </div>
+        </section>
+        </body>
+        <footer>This Application was created by Dudley R. Gamino J.R. in 2022 <a href="https://www.linkedin.com/in/dudley-gamino-43a432236/"target="_blank">LinkedIn</a> & <a href="https://github.com/Don-70"target="_blank">gitHub</a></footer>
+        </html>

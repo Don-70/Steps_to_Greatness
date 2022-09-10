@@ -27,6 +27,7 @@ db.on('error', (err) => console.log('Mongo ERROR: ' + err.message));
 
 app.use(express.urlencoded({ extented: false}));
 app.use(methodOverride('_method'));
+app.use(express.static('public'));
 
 
 // homepage route
@@ -38,9 +39,6 @@ app.get('/', (req, res) => {
 app.use('/goals', goalsRouter);
 app.use('/goals2', goals2Router);
 app.use('/goals3', goals3Router);
-
-
-
 
 
 

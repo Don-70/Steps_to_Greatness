@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/edit.css">
     <title>Document</title>
 </head>
 <body>
-    <%- include('./nav.ejs') %>
-    <h1>Edit Goal Page</h1>
+    <ul>
+
+       <il> <a href="/goals2"> Mid Term Goals</a></il>
+    </ul>
+    <section>
+        <div class="container">
+            <div class="list">
+                <h1>Edit Goal Page</h1>
     <form action="/goals2/<%= goal2.id %>?_method=PUT" method="POST">
         <label>Title:
-            <input type="text" name="title" value="<%=goal2.title%>">
+            <%=goal2.title%>
         </label><br>
         <label>Step One:
             <input type="text" name="Step1" value="<%=goal2.Step1%>">
@@ -24,5 +33,9 @@
         </label><br>
         <input type="submit" value="Update This Goal">
     </form>
+</div>
+</div>
+</section>
 </body>
+<footer>This Application was created by Dudley R. Gamino J.R. in 2022 <a href="https://www.linkedin.com/in/dudley-gamino-43a432236/"target="_blank">LinkedIn</a> & <a href="https://github.com/Don-70"target="_blank">gitHub</a></footer>
 </html>
