@@ -1,4 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Lato:ital,wght@1,700&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+.icon{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6O6rbwk9HHOwSTvz2IJUgYpK0CSpENGpVjA&usqp=CAU);
+    background-size: cover;
+    position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #020202;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.icon2{
+    background: url(https://icon-library.com/images/success-icon-png/success-icon-png-9.jpg);
+    background-size: cover;
+    position: absolute;
+  top: 38px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+}
 .jumbotron{
+    font-family: 'Lato', sans-serif;
     color: rgb(61, 60, 60);
     text-align: center;
     background: linear-gradient(45deg, rgb(173, 167, 158) 50%, rgb(118, 78, 27) );
@@ -66,6 +92,20 @@ section{
     background-color:   rgb(160, 146, 124);
     border-radius: 8px;
     background-size: cover;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.topr{
+    font-size: medium;
+    text-align: center;
+    width: 50%;
+    background: linear-gradient(45deg, rgb(173, 167, 158) 50%, rgb(118, 78, 27) );
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: -525px;
+    margin-right: -400px;
+    margin-left: 100px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 .right{
